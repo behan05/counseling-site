@@ -1,0 +1,23 @@
+// default color for backgound and text =>
+// for text color.
+$default-primary-color: #ffffff;
+$default-secondary-color: #000000;
+
+// for background color.
+$default-background-color: #EDF4F2;
+$default-cart-hover-background-color: #66A5AD;
+
+// ******************************************************
+
+// for dark mode text color =>
+$dark-mode-primary-color: #ffffff;
+$dark-mode-secondary-color: #111A24;
+
+// for dark mode background color =>
+$dark-mode-cart-hover-background-color: #20958B;
+
+// text shadow =>
+$text-shadow: 1px 1px 1px $default-secondary-color;
+
+// box shadow =>
+$box-shadow: 0 0 0.5rem $default-secondary-color;

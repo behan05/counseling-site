@@ -1,0 +1,20 @@
+@import "./base/variables";
+@import "./utils/mixin";
+@import "./base/reset";
+@import "./base/typography";
+@import "./components/button";
+@import "./components/footer";
+@import "./components/forms";
+@import "./components/header";
+@import "./utils/function";
+
+
+body {
+    background-color: $default-background-color;
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}

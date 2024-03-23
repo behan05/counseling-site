@@ -1,0 +1,22 @@
+{
+  "name": "counselling-website-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/behan05/Counselling-Website-Project.git"
+  },
+  "author": "behan kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/behan05/Counselling-Website-Project/issues"
+  },
+  "homepage": "https://github.com/behan05/Counselling-Website-Project#readme",
+  "dependencies": {
+    "sass": "^1.72.0"
+  }
+}
