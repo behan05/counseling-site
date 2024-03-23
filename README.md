@@ -1,1 +1,1 @@
-# Counselling-Website-Project
+# Counseling-Website-Project
