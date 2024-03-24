@@ -39,7 +39,8 @@
             width: 8vw;
             font-family: "Roboto";
             font-size: 1.2rem;
-            color: $default-secondary-color;
+            color: lightseagreen;
+            text-shadow: $text-shadow;
 
             @include display-flex() {
                 justify-content: center
@@ -63,6 +64,7 @@
         span i {
             font-size: 1.8rem;
             padding: 4px;
+            text-shadow: $text-shadow;
         }
     }
 
@@ -76,7 +78,7 @@
             font-size: 2rem;
             @include display-flex()
         }
-        
+
     }
 
     .container__closeBtn {
@@ -90,23 +92,71 @@
             @include display-flex()
         }
     }
+
 }
 
-// media for header =>
-
-
-// mobile/Tablate versions.
+// media Query
 @include responsive(100px, 870px) {
 
     .container__navbar {
-        padding: 8px;
+        .container__logo {
+            margin-right: 200px;
+        }
 
         .container__menu {
             display: none;
+
+            @include display-flex() {
+                flex-wrap: wrap;
+                position: absolute;
+                top: 5.1rem;
+                left: 0px;
+            }
+
+            @include moveRightToLeft() {
+                -moz-animation: shiftNavbar 0.5s linear 0s 1;
+                -webkit-animation: shiftNavbar 0.5s linear 0s 1;
+                -o-animation: shiftNavbar 0.5s linear 0s 1;
+                -ms-animation: shiftNavbar 0.5s linear 0s 1;
+                animation: shiftNavbar 0.5s linear 0s 1;
+            }
+
+            a {
+                height: 10vh;
+                width: 100vw;
+                font-family: "Roboto";
+                font-size: 1.2rem;
+                color: $default-primary-color;
+                border-bottom: 1px solid #ddd;
+                border-radius: 10%;
+
+                i {
+                    font-size: 2rem;
+                    color: orangered;
+                }
+
+                &:hover {
+                    background-color: #ddd;
+                    color: $default-cart-hover-background-color;
+                    border: none;
+                    font-size: 1.5rem;
+                }
+
+            }
+
+            .home {
+                color: orangered;
+            }
         }
 
         .container__menuBtn {
             display: block;
+            color: $default-primary-color;
+
+        }
+
+        .container__closeBtn {
+            color: $default-primary-color;
 
         }
 

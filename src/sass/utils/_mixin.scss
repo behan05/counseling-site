@@ -16,3 +16,17 @@
         @content;
     }
 }
+
+@mixin moveRightToLeft() {
+    @keyframes shiftNavbar {
+        from {
+            margin-left: 100%;
+        }
+
+        to {
+            margin-left: 0px;
+        }
+    }
+
+    @content;
+}
