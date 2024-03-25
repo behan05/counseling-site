@@ -13,4 +13,7 @@ $color-red : orangered;
 $text-shadow: 0px 0px 1px $default-secondary-color;
 
 // box shadow =>
-$box-shadow: 0 0 0.5rem $default-secondary-color;
+$box-shadow: 0 0 0.3rem $default-cart-hover-background-color;
+
+$gradient-color: linear-gradient(to bottom,green, $default-background-color, lightseagreen);;
+
