@@ -162,7 +162,7 @@ a {
 .container__navbar {
   height: 10vh;
   width: auto;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #dddddd;
   box-shadow: 0 0 0.3rem #66A5AD;
   display: flex;
   align-items: center;
@@ -201,7 +201,7 @@ a {
   justify-content: center;
 }
 .container__navbar .container__menu a:hover {
-  border: 0.5px solid #ffffff;
+  border: 0.5px solid #dddddd;
   border-radius: 4px;
   box-shadow: 0 0 0.3rem #66A5AD;
 }
@@ -272,7 +272,7 @@ a {
     width: 100vw;
     font-family: "Roboto";
     font-size: 1.2rem;
-    color: #ffffff;
+    color: #dddddd;
     border-bottom: 1px solid #ddd;
     border-radius: none;
     background-color: #111A24;
@@ -293,10 +293,10 @@ a {
   }
   .container__navbar .container__menuBtn {
     display: block;
-    color: #ffffff;
+    color: #dddddd;
   }
   .container__navbar .container__closeBtn {
-    color: #ffffff;
+    color: #dddddd;
   }
 }
 .container__slider {
@@ -359,14 +359,14 @@ a {
   background-color: #66A5AD;
 }
 .container__slider .frame .slider .slide .slide-content:hover h2 {
-  color: #ffffff;
+  color: #dddddd;
 }
 .container__slider .frame .slider .slide .slide-content:hover p {
   padding: 0 2rem;
   color: #000000;
 }
 .container__slider .frame .slider .slide .slide-content h2 {
-  color: #ffffff;
+  color: #dddddd;
   text-shadow: 0px 0px 1px #000000;
   letter-spacing: 0.2rem;
   font-size: 1.5rem;
@@ -376,20 +376,20 @@ a {
   padding: 0.7rem;
   margin: 1rem 0;
   background: transparent;
-  color: #ffffff;
+  color: #dddddd;
   letter-spacing: 0.1rem;
   margin: 1rem 2rem;
   font-size: 1rem;
   text-shadow: 0px 0px 1px #000000;
   letter-spacing: 0.1rem;
-  border: 0.5px solid #ffffff;
+  border: 0.5px solid #dddddd;
   border-radius: 4px;
   box-shadow: 0 0 0.3rem #66A5AD;
   box-shadow: 0 0 0.5rem;
 }
 .container__slider .frame .slider .slide .slide-content button:hover {
   background-image: linear-gradient(to bottom, green, #111A24, lightseagreen);
-  color: #ffffff;
+  color: #dddddd;
 }
 .container__slider .frame .slider .slide .slide-content p {
   padding: 0 2rem;
@@ -445,7 +445,7 @@ a {
     background-color: #66A5AD;
   }
   .container__slider .frame .slider .slide .slide-content:hover h2 {
-    color: #ffffff;
+    color: #dddddd;
   }
   .container__slider .frame .slider .slide .slide-content:hover p {
     padding: 0 2rem;
@@ -465,6 +465,315 @@ body {
 .container {
   width: 100vw;
   height: 100vh;
+}
+
+.cartsection {
+  width: 90%;
+  height: 400px;
+  margin: 0 auto;
+}
+.cartsection .cartsection__carts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.cartsection .cartsection__carts .opening-hours {
+  height: 350px;
+  box-shadow: 0 0 0.2rem #dddddd;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.cartsection .cartsection__carts .opening-hours h2 {
+  font-size: 1.5rem;
+  color: lightseagreen;
+  margin-top: 2.5rem;
+  letter-spacing: 0.2rem;
+  text-shadow: 0px 0px 1px #000000;
+}
+.cartsection .cartsection__carts .opening-hours:hover {
+  background-color: lightseagreen;
+  box-shadow: 0 0 0.3rem #66A5AD;
+  text-shadow: 0px 0px 1px #000000;
+}
+.cartsection .cartsection__carts .opening-hours:hover h2 {
+  color: #dddddd;
+  padding: 0 2rem;
+  text-shadow: 0px 0px 1px #000000;
+}
+.cartsection .cartsection__carts .opening-hours .days-box {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+.cartsection .cartsection__carts .opening-hours .days-box .day1,
+.cartsection .cartsection__carts .opening-hours .days-box .day2,
+.cartsection .cartsection__carts .opening-hours .days-box .day3 {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dddddd;
+  height: 2.5rem;
+  color: lightseagreen;
+  text-shadow: 0px 0px 1px #000000;
+}
+.cartsection .cartsection__carts .doctors-timetable {
+  height: 350px;
+  box-shadow: 0 0 0.2rem #dddddd;
+  border-radius: 8px;
+}
+.cartsection .cartsection__carts .doctors-timetable h2 {
+  font-size: 1.5rem;
+  color: lightseagreen;
+  margin-top: 2.5rem;
+  letter-spacing: 0.2rem;
+  text-shadow: 0px 0px 1px #000000;
+}
+.cartsection .cartsection__carts .doctors-timetable:hover {
+  background-color: lightseagreen;
+  box-shadow: 0 0 0.3rem #66A5AD;
+  text-shadow: 0px 0px 1px #000000;
+}
+.cartsection .cartsection__carts .doctors-timetable:hover h2 {
+  color: #dddddd;
+  padding: 0 2rem;
+}
+.cartsection .cartsection__carts .doctors-timetable:hover p {
+  color: #dddddd;
+}
+.cartsection .cartsection__carts .doctors-timetable:hover button {
+  border: 1px solid #dddddd;
+  background-color: #111A24;
+  opacity: 0.9;
+  cursor: pointer;
+}
+.cartsection .cartsection__carts .doctors-timetable:hover button a {
+  color: #dddddd;
+  opacity: 1;
+}
+.cartsection .cartsection__carts .doctors-timetable p {
+  padding: 2rem;
+  color: lightseagreen;
+  text-shadow: 0px 0px 1px #000000;
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+.cartsection .cartsection__carts .doctors-timetable button {
+  margin: 0 2rem;
+  padding: 1rem 2.25rem;
+  background: none;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 0.3rem #66A5AD;
+}
+.cartsection .cartsection__carts .doctors-timetable button:hover {
+  border: 0.5px solid #dddddd;
+  border-radius: 4px;
+  box-shadow: 0 0 0.3rem #66A5AD;
+  border-radius: 8px;
+}
+.cartsection .cartsection__carts .doctors-timetable button:hover a {
+  color: #dddddd;
+}
+.cartsection .cartsection__carts .doctors-timetable button a {
+  color: lightseagreen;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+.cartsection .cartsection__carts .request-call {
+  height: 350px;
+  box-shadow: 0 0 0.2rem #dddddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.cartsection .cartsection__carts .request-call h2 {
+  font-size: 1.5rem;
+  color: lightseagreen;
+  margin-top: 2.5rem;
+  letter-spacing: 0.2rem;
+  text-shadow: 0px 0px 1px #000000;
+}
+.cartsection .cartsection__carts .request-call:hover {
+  background-color: lightseagreen;
+  box-shadow: 0 0 0.3rem #66A5AD;
+  text-shadow: 0px 0px 1px #000000;
+}
+.cartsection .cartsection__carts .request-call:hover h2 {
+  color: #dddddd;
+  padding: 0 2rem;
+}
+.cartsection .cartsection__carts .request-call:hover input {
+  background-color: #111A24;
+}
+.cartsection .cartsection__carts .request-call:hover input::placeholder {
+  color: #dddddd;
+}
+.cartsection .cartsection__carts .request-call:hover input[type=date] {
+  color: #dddddd;
+}
+.cartsection .cartsection__carts .request-call:hover input[type=date]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+.cartsection .cartsection__carts .request-call:hover a {
+  opacity: 1;
+}
+.cartsection .cartsection__carts .request-call:hover a button {
+  border: 1px solid #dddddd;
+  background-color: #111A24;
+  opacity: 0.9;
+  cursor: pointer;
+  color: #dddddd;
+}
+.cartsection .cartsection__carts .request-call form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+  margin-top: 1.5rem;
+}
+.cartsection .cartsection__carts .request-call form input {
+  height: 2.5rem;
+  width: 100%;
+  padding: 1rem;
+  outline: none;
+  background: transparent;
+  border: none;
+  box-shadow: 0 0 0.3rem #66A5AD;
+  color: #dddddd;
+}
+.cartsection .cartsection__carts .request-call form input::placeholder {
+  color: lightseagreen;
+}
+.cartsection .cartsection__carts .request-call form input[type=date] {
+  color: lightseagreen;
+}
+.cartsection .cartsection__carts .request-call form a button {
+  padding: 0.5rem 0;
+  background: none;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 0.3rem #66A5AD;
+  color: lightseagreen;
+  width: 80%;
+  height: 3em;
+}
+@media screen and (min-width: 100px) and (max-width: 870px) {
+  .cartsection .cartsection__carts {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.5rem;
+    padding: 0;
+  }
+}
+
+.aboutclinicsection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem;
+  gap: 1rem;
+}
+.aboutclinicsection .image-section {
+  box-shadow: 0 0 0.3rem #66A5AD;
+}
+.aboutclinicsection .image-section img {
+  border-radius: 8px;
+  filter: brightness(105%) saturate(110%) drop-shadow(0 0 0.5rem) contrast(110%);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.aboutclinicsection .content-section {
+  box-shadow: 0 0 0.3rem #66A5AD;
+  padding: 2rem;
+}
+.aboutclinicsection .content-section h2 {
+  font-size: 1.6rem;
+  color: lightseagreen;
+  letter-spacing: 0.2rem;
+  text-shadow: 0px 0px 1px #000000;
+}
+.aboutclinicsection .content-section p {
+  color: lightseagreen;
+  text-shadow: 0px 0px 1px #000000;
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+.aboutclinicsection .content-section .clinic-icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0rem;
+  box-shadow: 0 0 0.3rem #66A5AD;
+  margin-top: 2.5rem;
+}
+.aboutclinicsection .content-section .clinic-icons:hover {
+  box-shadow: 0 0 0.5rem 2px lightseagreen;
+  opacity: 0.8;
+}
+.aboutclinicsection .content-section .clinic-icons .box1,
+.aboutclinicsection .content-section .clinic-icons .box2,
+.aboutclinicsection .content-section .clinic-icons .box3,
+.aboutclinicsection .content-section .clinic-icons .box4 {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.aboutclinicsection .content-section .clinic-icons .box1 i,
+.aboutclinicsection .content-section .clinic-icons .box2 i,
+.aboutclinicsection .content-section .clinic-icons .box3 i,
+.aboutclinicsection .content-section .clinic-icons .box4 i {
+  font-size: 1.5rem;
+  color: #dddddd;
+}
+.aboutclinicsection .content-section .clinic-icons .box1 h3,
+.aboutclinicsection .content-section .clinic-icons .box2 h3,
+.aboutclinicsection .content-section .clinic-icons .box3 h3,
+.aboutclinicsection .content-section .clinic-icons .box4 h3 {
+  font-size: 1rem;
+  color: lightseagreen;
+  letter-spacing: 0.1rem;
+  font-weight: 900;
+  text-shadow: 0px 0px 1px #000000;
+  margin-left: 10px;
+}
+.aboutclinicsection .content-section .clinic-icons .box1 p,
+.aboutclinicsection .content-section .clinic-icons .box2 p,
+.aboutclinicsection .content-section .clinic-icons .box3 p,
+.aboutclinicsection .content-section .clinic-icons .box4 p {
+  margin-top: 4px;
+  margin-left: 10px;
+}
+.aboutclinicsection .content-section .clinic-icons .box1 .icon-content,
+.aboutclinicsection .content-section .clinic-icons .box2 .icon-content,
+.aboutclinicsection .content-section .clinic-icons .box3 .icon-content,
+.aboutclinicsection .content-section .clinic-icons .box4 .icon-content {
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 100px) and (max-width: 870px) {
+  .aboutclinicsection {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 1rem;
+    gap: 10px;
+    position: relative;
+    top: 41rem;
+  }
+  .aboutclinicsection .content-section .clinic-icons {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .aboutclinicsection .content-section .clinic-icons .box2 .icon-content,
+  .aboutclinicsection .content-section .clinic-icons .box1 .icon-content,
+  .aboutclinicsection .content-section .clinic-icons .box3 .icon-content,
+  .aboutclinicsection .content-section .clinic-icons .box4 .icon-content {
+    margin-left: 4rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

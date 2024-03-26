@@ -19,3 +19,366 @@ body {
     width: 100vw;
     height: 100vh;
 }
+
+// style for container__carts.
+.cartsection {
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+
+    .cartsection__carts {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+
+
+        .opening-hours {
+            height: 350px;
+            box-shadow: 0 0 0.2rem $default-primary-color;
+            cursor: pointer;
+            border-radius: 8px;
+
+            h2 {
+                font-size: 1.5rem;
+                color: lightseagreen;
+                margin-top: 2.5rem;
+                letter-spacing: 0.2rem;
+                text-shadow: $text-shadow;
+            }
+
+            &:hover {
+                @include cart-hover();
+
+                h2 {
+                    color: $default-primary-color;
+                    padding: 0 2rem;
+                    text-shadow: $text-shadow;
+                }
+            }
+
+            .days-box {
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                gap: 1rem;
+                padding: 2rem;
+                margin-top: 2rem;
+
+                .day1,
+                .day2,
+                .day3 {
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid $default-primary-color;
+                    height: 2.5rem;
+                    color: lightseagreen;
+                    text-shadow: $text-shadow;
+
+                }
+            }
+        }
+
+        .doctors-timetable {
+            height: 350px;
+            box-shadow: 0 0 0.2rem $default-primary-color;
+            border-radius: 8px;
+
+            h2 {
+                font-size: 1.5rem;
+                color: lightseagreen;
+                margin-top: 2.5rem;
+                letter-spacing: 0.2rem;
+                text-shadow: $text-shadow;
+            }
+
+            &:hover {
+                @include cart-hover();
+
+                h2 {
+                    color: $default-primary-color;
+                    padding: 0 2rem;
+                }
+
+                p {
+                    color: $default-primary-color;
+                }
+
+                button {
+                    border: 1px solid $default-primary-color;
+                    background-color: $default-background-color;
+                    opacity: 0.9;
+                    cursor: pointer;
+
+                    a {
+                        color: $default-primary-color;
+                        opacity: 1;
+                    }
+                }
+            }
+
+            p {
+                padding: 2rem;
+                color: lightseagreen;
+                text-shadow: $text-shadow;
+                font-family: "Roboto";
+                font-size: 1.2rem;
+                margin-top: 2rem;
+            }
+
+            button {
+                margin: 0 2rem;
+                padding: 1rem 2.25rem;
+                background: none;
+                border: none;
+                border-radius: 8px;
+                box-shadow: $box-shadow;
+
+                &:hover {
+                    @include hover() {
+                        border-radius: 8px;
+                    }
+
+                    a {
+                        color: $default-primary-color;
+                    }
+
+                }
+
+                a {
+                    color: lightseagreen;
+                    font-size: 1.2rem;
+                    letter-spacing: 0.1rem;
+                }
+            }
+
+        }
+
+        .request-call {
+            height: 350px;
+            box-shadow: 0 0 0.2rem $default-primary-color;
+            border-radius: 8px;
+            overflow: hidden;
+
+            h2 {
+                font-size: 1.5rem;
+                color: lightseagreen;
+                margin-top: 2.5rem;
+                letter-spacing: 0.2rem;
+                text-shadow: $text-shadow;
+            }
+
+            &:hover {
+                @include cart-hover();
+
+                h2 {
+                    color: $default-primary-color;
+                    padding: 0 2rem;
+                }
+
+                input {
+                    background-color: $default-background-color;
+
+                    &::placeholder {
+                        color: $default-primary-color;
+                    }
+                }
+
+                input[type="date"] {
+                    color: $default-primary-color;
+                }
+
+                input[type="date"]::-webkit-calendar-picker-indicator {
+                    filter: invert(1);
+                }
+
+                a {
+                    opacity: 1;
+
+                    button {
+                        border: 1px solid $default-primary-color;
+                        background-color: $default-background-color;
+                        opacity: 0.9;
+                        cursor: pointer;
+                        color: $default-primary-color;
+
+                    }
+                }
+
+            }
+
+            form {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 1fr);
+                gap: 1rem;
+                padding: 2rem;
+                margin-top: 1.5rem;
+
+                input {
+                    height: 2.5rem;
+                    width: 100%;
+                    padding: 1rem;
+                    outline: none;
+                    background: transparent;
+                    border: none;
+                    box-shadow: $box-shadow;
+                    color: $default-primary-color;
+
+                    &::placeholder {
+                        color: lightseagreen;
+                    }
+                }
+
+                input[type="date"] {
+                    color: lightseagreen;
+                }
+
+                a {
+
+                    button {
+                        padding: 0.5rem 0;
+                        background: none;
+                        border: none;
+                        border-radius: 8px;
+                        box-shadow: $box-shadow;
+                        color: lightseagreen;
+                        width: 80%;
+                        height: 3em;
+
+                    }
+                }
+
+
+
+            }
+        }
+    }
+
+    @include responsive(100px, 870px) {
+        .cartsection__carts {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 0.5rem;
+            padding: 0;
+
+        }
+    }
+}
+
+.aboutclinicsection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+    gap: 1rem;
+
+    .image-section {
+        box-shadow: $box-shadow;
+
+        img {
+            @include imageBright() {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .content-section {
+        box-shadow: $box-shadow;
+        padding: 2rem;
+
+        h2 {
+            font-size: 1.6rem;
+            color: lightseagreen;
+            letter-spacing: 0.2rem;
+            text-shadow: $text-shadow;
+        }
+
+        p {
+            color: lightseagreen;
+            text-shadow: $text-shadow;
+            font-family: "Roboto";
+            font-size: 1.2rem;
+            margin-top: 2rem;
+        }
+
+        .clinic-icons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 0rem;
+            box-shadow: $box-shadow;
+            margin-top: 2.5rem;
+
+            &:hover {
+                box-shadow: 0 0 0.5rem 2px lightseagreen;
+                opacity: 0.8;
+            }
+
+            .box1,
+            .box2,
+            .box3,
+            .box4 {
+                padding: 1rem;
+
+                @include display-flex() {
+                    justify-content: space-between;
+                }
+
+                i {
+                    font-size: 1.5rem;
+                    color: $default-primary-color;
+                }
+
+                h3 {
+                    font-size: 1rem;
+                    color: lightseagreen;
+                    letter-spacing: 0.1rem;
+                    font-weight: 900;
+                    text-shadow: $text-shadow;
+                    margin-left: 10px;
+                }
+
+                p {
+                    margin-top: 4px;
+                    margin-left: 10px;
+                }
+
+                .icon-content {
+                    margin-left: 1rem;
+                }
+            }
+
+        }
+    }
+}
+
+// media Query
+@include responsive(100px, 870px) {
+    .aboutclinicsection {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        padding: 1rem;
+        gap: 10px;
+        position: relative;
+        top: 41rem;
+
+        .content-section {
+            .clinic-icons {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 1fr);
+
+                .box2,
+                .box1,
+                .box3,
+                .box4 {
+
+                    .icon-content {
+                        margin-left: 4rem;
+                    }
+
+                }
+            }
+        }
+    }
+}

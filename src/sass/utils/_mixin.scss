@@ -39,3 +39,12 @@
 
     @content;
 }
+
+
+@mixin cart-hover() {
+    background-color: lightseagreen;
+    box-shadow: $box-shadow;
+    text-shadow: $text-shadow;
+
+    @content;
+}
