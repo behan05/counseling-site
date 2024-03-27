@@ -6,7 +6,6 @@
 @import "./components/footer";
 @import "./components/forms";
 @import "./components/header";
-@import "./utils/function";
 @import "./components/slider";
 
 
@@ -382,3 +381,237 @@ body {
         }
     }
 }
+
+
+// Start Our Doctors Section.
+
+.our-doctors-container {
+
+    padding: 1rem 0.5rem;
+
+    h3 {
+        font-size: 1.7rem;
+        color: lightseagreen;
+        letter-spacing: 0.2rem;
+        text-shadow: $text-shadow;
+
+    }
+
+    .doctor-carts {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+        margin-top: 2rem;
+
+        .box {
+            height: 220px;
+            box-shadow: $box-shadow;
+
+            &:hover {
+                box-shadow: 0 0 0.5rem lightseagreen;
+            }
+        }
+
+        .box1 {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            height: auto;
+            align-self: stretch;
+            @include display-flex();
+
+            .img {
+                height: 100%;
+                width: 50%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+
+                    @include imageBright() {
+                        object-fit: cover;
+                        border-radius: 0;
+                        filter: drop-shadow(0 0 0);
+                    }
+                }
+            }
+
+            .img-content {
+                height: 100%;
+                width: 50%;
+                margin: 0.5rem;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+
+                h3 {
+                    font-size: 1rem;
+                    letter-spacing: 0.1rem;
+                    margin-top: 4rem;
+                    text-shadow: $text-shadow;
+                }
+
+                h2 {
+                    margin-top: 0.8rem;
+                    color: lightseagreen;
+                    text-shadow: $text-shadow;
+                    letter-spacing: 1px;
+                }
+
+                h4 {
+                    color: $default-primary-color;
+                    margin-top: 0.8rem;
+                    text-shadow: $text-shadow;
+                }
+
+                hr {
+                    margin-top: 0.8rem;
+                }
+
+                span {
+                    i {
+                        margin-top: 0.9rem;
+                        font-size: 1.5rem;
+                        color: $default-primary-color;
+                        text-shadow: $text-shadow;
+                    }
+
+                    span {
+                        color: lightseagreen;
+                        margin-left: 1rem;
+                        font-size: 1.1rem;
+                        text-shadow: $text-shadow;
+
+                        &:hover {
+                            color: red;
+                        }
+                    }
+                }
+
+                p {
+                    color: $default-primary-color;
+                    margin-top: 0.8rem;
+                    text-shadow: $text-shadow;
+                    padding: 2rem 0;
+                }
+            }
+        }
+
+        .box2,
+        .box3,
+        .box4,
+        .box5 {
+            display: flex;
+            width: 100%;
+
+            .img {
+                width: 50%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+
+                    @include imageBright() {
+                        object-fit: cover;
+                        border-radius: 0;
+                        filter: drop-shadow(0 0 0);
+                    }
+                }
+            }
+
+            .img-content {
+                width: 50%;
+                padding: 0 0.5rem;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+
+                h3 {
+                    font-size: 1rem;
+                    letter-spacing: 0.1rem;
+                    margin-top: 1rem;
+                    text-shadow: $text-shadow;
+                }
+
+                h2 {
+                    margin-top: 0.8rem;
+                    color: lightseagreen;
+                    text-shadow: $text-shadow;
+                    letter-spacing: 1px;
+                    font-size: 1.1rem;
+                }
+
+                h4 {
+                    color: $default-primary-color;
+                    margin-top: 0.8rem;
+                    text-shadow: $text-shadow;
+                }
+
+                hr {
+                    margin-top: 0.8rem;
+                }
+
+                span {
+                    i {
+                        margin-top: 0.9rem;
+                        font-size: 1.5rem;
+                        color: $default-primary-color;
+                        text-shadow: $text-shadow;
+                    }
+
+                    span {
+                        color: lightseagreen;
+                        margin-left: 1rem;
+                        font-size: 1.1rem;
+                        text-shadow: $text-shadow;
+
+                        &:hover {
+                            color: red;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+// media Query
+@include responsive(100px, 870px) {
+    .our-doctors-container {
+        position: relative;
+        top: 40rem;
+
+        .doctor-carts {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(auto, 1fr);
+
+            .box2,
+            .box3,
+            .box4,
+            .box5 {
+                .img-content {
+                    span {
+
+                        i {
+                            font-size: 2rem;
+                            margin-top: 1.2rem;
+                        }
+
+                        span {
+                            font-size: 1rem;
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// End Our Doctors Section.
+

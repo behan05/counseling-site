@@ -775,5 +775,219 @@ body {
     margin-left: 4rem;
   }
 }
+.our-doctors-container {
+  padding: 1rem 0.5rem;
+}
+.our-doctors-container h3 {
+  font-size: 1.7rem;
+  color: lightseagreen;
+  letter-spacing: 0.2rem;
+  text-shadow: 0px 0px 1px #000000;
+}
+.our-doctors-container .doctor-carts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.our-doctors-container .doctor-carts .box {
+  height: 220px;
+  box-shadow: 0 0 0.3rem #66A5AD;
+}
+.our-doctors-container .doctor-carts .box:hover {
+  box-shadow: 0 0 0.5rem lightseagreen;
+}
+.our-doctors-container .doctor-carts .box1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: auto;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+.our-doctors-container .doctor-carts .box1 .img {
+  height: 100%;
+  width: 50%;
+}
+.our-doctors-container .doctor-carts .box1 .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  filter: brightness(105%) saturate(110%) drop-shadow(0 0 0.5rem) contrast(110%);
+  object-fit: cover;
+  border-radius: 0;
+  filter: drop-shadow(0 0 0);
+}
+.our-doctors-container .doctor-carts .box1 .img-content {
+  height: 100%;
+  width: 50%;
+  margin: 0.5rem;
+}
+.our-doctors-container .doctor-carts .box1 .img-content:hover {
+  opacity: 0.8;
+}
+.our-doctors-container .doctor-carts .box1 .img-content h3 {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  margin-top: 4rem;
+  text-shadow: 0px 0px 1px #000000;
+}
+.our-doctors-container .doctor-carts .box1 .img-content h2 {
+  margin-top: 0.8rem;
+  color: lightseagreen;
+  text-shadow: 0px 0px 1px #000000;
+  letter-spacing: 1px;
+}
+.our-doctors-container .doctor-carts .box1 .img-content h4 {
+  color: #dddddd;
+  margin-top: 0.8rem;
+  text-shadow: 0px 0px 1px #000000;
+}
+.our-doctors-container .doctor-carts .box1 .img-content hr {
+  margin-top: 0.8rem;
+}
+.our-doctors-container .doctor-carts .box1 .img-content span i {
+  margin-top: 0.9rem;
+  font-size: 1.5rem;
+  color: #dddddd;
+  text-shadow: 0px 0px 1px #000000;
+}
+.our-doctors-container .doctor-carts .box1 .img-content span span {
+  color: lightseagreen;
+  margin-left: 1rem;
+  font-size: 1.1rem;
+  text-shadow: 0px 0px 1px #000000;
+}
+.our-doctors-container .doctor-carts .box1 .img-content span span:hover {
+  color: red;
+}
+.our-doctors-container .doctor-carts .box1 .img-content p {
+  color: #dddddd;
+  margin-top: 0.8rem;
+  text-shadow: 0px 0px 1px #000000;
+  padding: 2rem 0;
+}
+.our-doctors-container .doctor-carts .box2,
+.our-doctors-container .doctor-carts .box3,
+.our-doctors-container .doctor-carts .box4,
+.our-doctors-container .doctor-carts .box5 {
+  display: flex;
+  width: 100%;
+}
+.our-doctors-container .doctor-carts .box2 .img,
+.our-doctors-container .doctor-carts .box3 .img,
+.our-doctors-container .doctor-carts .box4 .img,
+.our-doctors-container .doctor-carts .box5 .img {
+  width: 50%;
+  height: 100%;
+}
+.our-doctors-container .doctor-carts .box2 .img img,
+.our-doctors-container .doctor-carts .box3 .img img,
+.our-doctors-container .doctor-carts .box4 .img img,
+.our-doctors-container .doctor-carts .box5 .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  filter: brightness(105%) saturate(110%) drop-shadow(0 0 0.5rem) contrast(110%);
+  object-fit: cover;
+  border-radius: 0;
+  filter: drop-shadow(0 0 0);
+}
+.our-doctors-container .doctor-carts .box2 .img-content,
+.our-doctors-container .doctor-carts .box3 .img-content,
+.our-doctors-container .doctor-carts .box4 .img-content,
+.our-doctors-container .doctor-carts .box5 .img-content {
+  width: 50%;
+  padding: 0 0.5rem;
+}
+.our-doctors-container .doctor-carts .box2 .img-content:hover,
+.our-doctors-container .doctor-carts .box3 .img-content:hover,
+.our-doctors-container .doctor-carts .box4 .img-content:hover,
+.our-doctors-container .doctor-carts .box5 .img-content:hover {
+  opacity: 0.8;
+}
+.our-doctors-container .doctor-carts .box2 .img-content h3,
+.our-doctors-container .doctor-carts .box3 .img-content h3,
+.our-doctors-container .doctor-carts .box4 .img-content h3,
+.our-doctors-container .doctor-carts .box5 .img-content h3 {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  margin-top: 1rem;
+  text-shadow: 0px 0px 1px #000000;
+}
+.our-doctors-container .doctor-carts .box2 .img-content h2,
+.our-doctors-container .doctor-carts .box3 .img-content h2,
+.our-doctors-container .doctor-carts .box4 .img-content h2,
+.our-doctors-container .doctor-carts .box5 .img-content h2 {
+  margin-top: 0.8rem;
+  color: lightseagreen;
+  text-shadow: 0px 0px 1px #000000;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+}
+.our-doctors-container .doctor-carts .box2 .img-content h4,
+.our-doctors-container .doctor-carts .box3 .img-content h4,
+.our-doctors-container .doctor-carts .box4 .img-content h4,
+.our-doctors-container .doctor-carts .box5 .img-content h4 {
+  color: #dddddd;
+  margin-top: 0.8rem;
+  text-shadow: 0px 0px 1px #000000;
+}
+.our-doctors-container .doctor-carts .box2 .img-content hr,
+.our-doctors-container .doctor-carts .box3 .img-content hr,
+.our-doctors-container .doctor-carts .box4 .img-content hr,
+.our-doctors-container .doctor-carts .box5 .img-content hr {
+  margin-top: 0.8rem;
+}
+.our-doctors-container .doctor-carts .box2 .img-content span i,
+.our-doctors-container .doctor-carts .box3 .img-content span i,
+.our-doctors-container .doctor-carts .box4 .img-content span i,
+.our-doctors-container .doctor-carts .box5 .img-content span i {
+  margin-top: 0.9rem;
+  font-size: 1.5rem;
+  color: #dddddd;
+  text-shadow: 0px 0px 1px #000000;
+}
+.our-doctors-container .doctor-carts .box2 .img-content span span,
+.our-doctors-container .doctor-carts .box3 .img-content span span,
+.our-doctors-container .doctor-carts .box4 .img-content span span,
+.our-doctors-container .doctor-carts .box5 .img-content span span {
+  color: lightseagreen;
+  margin-left: 1rem;
+  font-size: 1.1rem;
+  text-shadow: 0px 0px 1px #000000;
+}
+.our-doctors-container .doctor-carts .box2 .img-content span span:hover,
+.our-doctors-container .doctor-carts .box3 .img-content span span:hover,
+.our-doctors-container .doctor-carts .box4 .img-content span span:hover,
+.our-doctors-container .doctor-carts .box5 .img-content span span:hover {
+  color: red;
+}
+
+@media screen and (min-width: 100px) and (max-width: 870px) {
+  .our-doctors-container {
+    position: relative;
+    top: 40rem;
+  }
+  .our-doctors-container .doctor-carts {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+  }
+  .our-doctors-container .doctor-carts .box2 .img-content span i,
+  .our-doctors-container .doctor-carts .box3 .img-content span i,
+  .our-doctors-container .doctor-carts .box4 .img-content span i,
+  .our-doctors-container .doctor-carts .box5 .img-content span i {
+    font-size: 2rem;
+    margin-top: 1.2rem;
+  }
+  .our-doctors-container .doctor-carts .box2 .img-content span span,
+  .our-doctors-container .doctor-carts .box3 .img-content span span,
+  .our-doctors-container .doctor-carts .box4 .img-content span span,
+  .our-doctors-container .doctor-carts .box5 .img-content span span {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
