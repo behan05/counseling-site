@@ -2,11 +2,10 @@
 @import "./utils/mixin";
 @import "./base/reset";
 @import "./base/typography";
-@import "./components/button";
-@import "./components/footer";
 @import "./components/forms";
 @import "./components/header";
 @import "./components/slider";
+@import "./components/footer";
 
 
 body {
@@ -616,7 +615,6 @@ body {
 // End Our Doctors Section.
 
 // Start Latest News Section
-
 .latest-news-container {
     h2 {
         font-size: 2rem;

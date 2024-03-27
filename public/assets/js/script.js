@@ -1,30 +1,24 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const likeIcons = document.querySelectorAll(".heart-icon");
+    const likeCounts = document.querySelectorAll(".like-count");
 
+    likeIcons.forEach((icon, index) => {
+        icon.addEventListener("click", () => {
+            let initialVal = parseInt(likeCounts[index].textContent);
 
-// document.addEventListener("DOMContentLoaded", () => {
-    // const heartIcon = document.querySelector(".heart-icon");
-    // const likeCount = document.querySelector(".like-count");
+            if (icon.classList.contains("liked")) {
+                icon.classList.remove("liked");
+                initialVal--;
+            } else {
+                icon.classList.add("liked");
+                initialVal++;
+            }
 
-    // let initialVal = 0;
-
-    // if (heartIcon && likeCount) {
-    //     heartIcon.addEventListener("click", () => {
-    //         heartIcon.style.color = "red";
-    //         initialVal++;
-    //         likeCount.textContent = initialVal;
-    //     });
-    // }
-// });
-
-
-// const heartIcon = document.querySelector(".heart-icon");
-// const likeCount = document.querySelector(".like-count");
-
-// let initialVal = 0;
-
-// if (heartIcon && likeCount) {
-//     heartIcon.addEventListener("click", () => {
-//         heartIcon.style.color = "red";
-//         initialVal++;
-//         likeCount.textContent = initialVal;
-//     });
-// }
+            if (isNaN(initialVal)) {
+                likeCounts[index].textContent = 1;
+            } else {
+                likeCounts[index].textContent = initialVal;
+            }
+        });
+    });
+});
