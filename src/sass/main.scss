@@ -387,13 +387,40 @@ body {
 
     padding: 1rem 0.5rem;
 
-    h3 {
-        font-size: 1.7rem;
-        color: lightseagreen;
-        letter-spacing: 0.2rem;
-        text-shadow: $text-shadow;
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
+        h3 {
+            font-size: 1.7rem;
+            color: lightseagreen;
+            letter-spacing: 0.2rem;
+            text-shadow: $text-shadow;
+        }
+
+        a {
+
+            button {
+                padding: 1rem 2.25rem;
+                background: none;
+                border: none;
+                border-radius: 8px;
+                box-shadow: $box-shadow;
+                color: lightseagreen;
+                letter-spacing: 0.1rem;
+                font-weight: 900;
+
+                &:hover {
+                    box-shadow: 0 0 0.5rem lightseagreen;
+                    color: $default-background-color;
+                    background-color: lightseagreen;
+                }
+
+            }
+        }
     }
+
 
     .doctor-carts {
         display: grid;
@@ -401,6 +428,13 @@ body {
         grid-template-rows: repeat(2, 1fr);
         gap: 1rem;
         margin-top: 2rem;
+
+        h3 {
+            font-size: 1.7rem;
+            color: lightseagreen;
+            letter-spacing: 0.2rem;
+            text-shadow: $text-shadow;
+        }
 
         .box {
             height: 250px;
@@ -585,6 +619,19 @@ body {
         position: relative;
         top: 40rem;
 
+        .title {
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            a {
+                button {
+                    padding: 1rem 1rem;
+                }
+            }
+        }
+
         .doctor-carts {
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(auto, 1fr);
@@ -742,5 +789,4 @@ body {
         }
     }
 }
-
 // End Latest News Section
