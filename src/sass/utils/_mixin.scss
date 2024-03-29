@@ -48,3 +48,21 @@
 
     @content;
 }
+
+// About us mixin.
+
+@mixin width-slide() {
+    @keyframes width-slider {
+        from {
+            background-image: url("../../assets/images/imgs/about-image/about-slider-img3.jpg");
+            margin-left: 100%;
+        }
+
+        to {
+            background-image: url("../../assets/images/imgs/about-image/about-slider-img4.jpg");
+            margin-left: 0
+        }
+    }
+
+    @content;
+}

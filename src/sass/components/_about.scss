@@ -1,0 +1,105 @@
+.container__animate-slider {
+    height: 80%;
+    width: 95%;
+    margin: 2rem auto;
+    filter: drop-shadow(1px 1px 0.5rem);
+
+    @include width-slide() {
+        animation: width-slider 2.5s linear 0s 1;
+    }
+
+
+    .image-slide {
+        animation: img-slide 10s linear 0s infinite alternate-reverse;
+    }
+}
+
+.section-count {
+    box-shadow: $box-shadow;
+    height: auto;
+    margin: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+
+    .box {
+        padding: 2rem 0;
+        filter: drop-shadow(10px 10px 10px lightseagreen);
+
+        @include display-flex() {
+            justify-content: center;
+        }
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+        @include display-flex() {
+            flex-direction: column;
+            border-right: 1px solid lightseagreen;
+        }
+
+        .counter {
+            color: $default-primary-color;
+            font-weight: 900;
+            font-size: 1.2rem;
+        }
+
+        h3 {
+            padding: 1rem 0;
+            font-size: 1.1rem;
+            font-weight: 900;
+            color: lightseagreen;
+            letter-spacing: 0.1rem;
+            text-shadow: $text-shadow;
+        }
+    }
+}
+
+
+// media Query
+@include responsive(100px, 870px) {
+    .clinic-section {
+        .aboutclinicsection {
+            position: relative;
+            top: 0rem !important;
+        }
+    }
+
+    .section-count {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+        position: relative;
+
+        .box1,
+        .box2,
+        .box3,
+        .box4 {
+            border-bottom: 1px solid lightseagreen;
+
+            .counter {
+                font-size: 1.7rem;
+            }
+
+            h3 {
+                font-size: 1.3rem;
+                letter-spacing: 0.2rem;
+            }
+        }
+    }
+
+    .doctor-container {
+        .our-doctors-container {
+            position: relative;
+            top: 0rem !important;
+        }
+    }
+
+    .footer-section {
+        footer {
+            position: relative;
+            top: 0rem !important;
+        }
+    }
+}

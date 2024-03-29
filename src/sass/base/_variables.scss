@@ -17,3 +17,40 @@ $box-shadow: 0 0 0.3rem $default-cart-hover-background-color;
 
 $gradient-color: linear-gradient(to bottom,green, $default-background-color, lightseagreen);;
 
+@keyframes img-slide {
+    25% {
+        background-image: url("/src/assets/images/imgs/about-image/about-slider-img1.jpg");
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+    }
+
+    50% {
+        background-image: url("/src/assets/images/imgs/about-image/about-slider-img2.jpg");
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+    }
+
+    75% {
+        background-image: url("/src/assets/images/imgs/about-image/about-slider-img3.jpg");
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+    }
+
+    100% {
+        background-image: url("/src/assets/images/imgs/about-image/about-slider-img4.jpg");
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+    }
+}
